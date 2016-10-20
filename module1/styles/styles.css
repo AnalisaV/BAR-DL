@@ -1,49 +1,90 @@
 body
 {
-	margin: 0px;
-	padding: 0px;
-	font-size: 12px;
-	font-family: Arial;
+	background: #1c1fd9;
+	font-size: 20px;
+	font-family: Verdana;
+	font-color: white;
+}
+h1
+{
+	color:white;
+	text-align:center;
+	font-size: 20px;
+	under-line: solid;
+	under-line: white;
 }
 
-#main-info
+h2
 {
-	float: left;
-	width: 627px;
+	color:white;
+	font-size: 16px;
+	under-line: solid;
+	under-line: white;
 }
-
-#aside-info
+.main
 {
-	float: left;
-	width: 200px;
-	vertical-align: top;
-	padding-left: 10px;
+	color: white;
+	text-align:left;
+	font-size: 16px;
+	disply: table-cell;
 }
-	
-#main-content
-{
-	height: 368px;
-	padding: 10px;
-	margin: 10px;
-}
-
 #navigation
 {
-	background: #666666;	
-	padding: 5px;
-	width: 886px;
-	float: left;
-	height: 18px;
+	color: white;
+	text-aline: left;
+	font-size: 16px;
+}
+a
+{
+	color:yellow;
+	text-decoration:none;
+	font-size: 12px;
+	
 }
 
-#sub-navigation
+a:visited
 {
-	background: #dddddd;	
-	padding: 5px;
-	width: 886px;
-	float: left;
-	height: 18px;
-	font-size: 14px;
+	color:#1ce902;
+}
+
+
+a:hover
+{
+	color:red;
+	border:solid red;
+}
+
+.style1
+{
+	text-align: center;
+	font-size: 30px;
+}
+
+.style2
+{
+	color: red;
+}
+
+#style4
+{
+	text-decoration:underline;
+	font-family:Courier;
+}
+
+#layout
+{
+	display: table;
+}
+
+#links
+{
+	display: table-cell;
+	width:250px;
+}
+
+#content
+{
+	display: table-cell;
 }
 
 #aside-title-audio
