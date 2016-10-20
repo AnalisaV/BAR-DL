@@ -1,10 +1,18 @@
 body
 {
-	background: #1c1fd9;
 	font-size: 20px;
 	font-family: Verdana;
 	font-color: white;
 }
+
+#navigation
+{
+	color: white;
+	text-aline: left;
+	font-size: 16px;
+}
+
+
 h1
 {
 	color:white;
@@ -28,12 +36,7 @@ h2
 	font-size: 16px;
 	disply: table-cell;
 }
-#navigation
-{
-	color: white;
-	text-aline: left;
-	font-size: 16px;
-}
+
 a
 {
 	color:yellow;
@@ -114,4 +117,18 @@ a:hover
 audio
 {
 	width: 230px;
+}
+
+#main-layout
+{
+display: table;
+}
+#main-content
+{
+display: table-cell;
+}
+#menu
+{
+display: table-cell;
+width: 200px;
 }
