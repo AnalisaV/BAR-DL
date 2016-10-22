@@ -1,4 +1,98 @@
+#main-info
+{
+    border: 1px solid gray;
+    height:100%;
+    background: #d8e8fe;
+    width: 100%;
+   
+}
 
+#running-header
+{
+	background: #f2e3cb;
+	text-align:center;
+	padding: 1px;
+}
+
+hr
+{
+   
+    background-color: #901327;
+    height: 3px;
+   
+}
+
+h1{
+	
+text-align:center;
+
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	font-family: Arial;
+}
+
+
+nav {
+    float: left;
+    max-width: 170px;
+    margin: 0;
+    padding: 1em;
+    
+}
+
+#aside-title-audio
+{
+	background: #1a10f0;
+	width: 233px;
+	font-size: 14px;
+	font-weight: bold;
+	color: white;
+	padding: 5px;
+}
+
+
+#aside-info
+{
+	float: right;
+	width: 200px;
+	vertical-align: top;
+	padding-left: 10px;
+}
+
+#transcript
+{
+	color: green;
+	font-size: 12px;
+	overflow: auto;
+	height: 321px;
+	width: 233px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 150px;
+    border-left: 2px solid orange;
+    padding: 2em;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+
+/*
 body
 {
 	margin: 0px;
@@ -84,4 +178,4 @@ body
 audio
 {
 	width: 230px;
-}
+}*/
