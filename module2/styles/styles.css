@@ -3,7 +3,7 @@
     border: 1px solid gray;
     height:100%;
     background: #d8e8fe;
-    width: 100%;
+    width: 60%;
    
 }
 
@@ -22,7 +22,7 @@ hr
    
 }
 
-h1{
+h1,h2{
 	
 text-align:center;
 
@@ -42,7 +42,6 @@ nav {
     max-width: 170px;
     margin: 0;
     padding: 1em;
-    
 }
 
 #aside-title-audio
@@ -60,7 +59,7 @@ nav {
 {
 	float: right;
 	width: 200px;
-	vertical-align: top;
+	horizontal-align: top;
 	padding-left: 10px;
 }
 
@@ -85,9 +84,19 @@ nav ul a {
 article {
     margin-left: 150px;
     border-left: 2px solid orange;
+    border-width:100%;
     padding: 2em;
     height: 100%;
     overflow: hidden;
+    width:80%;
+}
+
+#table-of-contents
+{
+	font-size:14px;
+	text-align: center;
+	color: #8e1726;
+	
 }
 
 
@@ -107,13 +116,7 @@ body
 	width: 627px;
 }
 
-#table-of-contents
-{
-	font-size:14px;
-	text-align: center;
-	border: solid;
-	
-}
+
 
 
 
