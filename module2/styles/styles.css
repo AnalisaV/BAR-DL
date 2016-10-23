@@ -91,13 +91,24 @@ article {
     width:80%;
 }
 
-#table-of-contents
+.table-of-contents
 {
-	font-size:14px;
+	font-size:18px;
 	text-align: center;
 	color: #8e1726;
-	
+	text-decoration: none;	
 }
+
+a:hover
+{
+	font-weight: bold;
+}
+
+
+
+
+
+
 
 
 
