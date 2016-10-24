@@ -4,6 +4,7 @@
 		<meta charset="utf-8"/>
 		<title>Page title here</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<script language="javascript" src="scripts/hot-spot.js"></script>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
@@ -20,10 +21,11 @@
 <header>
 			
    <h1>Module 1: Library 101</h1>
-   <h2>Library Guidelines</h2>
+   <h2>Available Materials</h2>
 </header>	
 
 <hr>
+
 
 		<section>
 		
@@ -31,13 +33,13 @@
 				 <h2> Navigation</h2>
 	
 			 	<ul>
-					<li><a href="1-title.html">Module 1</a></li>
+					<li><a href="1-title.html">Library 101</a></li>
 					<li><a href="2-navigation.html">Navigation</a></li>
 					<li><a href="3-use-of-library.html">Use of Library</a></li>
 					<li><a href="4-get-card.html">Get a card</a></li>
-					<li><a href="5-guidelines.html">Library Guidelines</a></li>
 					<li><a href="6-etiquette.html">Library Etiquette</a></li>
 					<li><a href="7-materials.html">Materials</a></li>
+					<li><a href="5-guidelines.html">Library Guidelines</a></li>
 					<li><a href="8-activity.html">Materials Activity</a></li>
 					<li><a href="9-video.html">Video</a></li>
 					<li><a href="10-assessment.html">Module 1 Assessment</a></li>
@@ -49,42 +51,46 @@
 				
 		<article>
 				
-		<div id="aside-info">
-				<aside>
-					<header>
-						<p id="aside-title-audio">Audio</p>
-					</header>
-					<!--- put your audio here --->
-					<br/>
-					
-					
-					<header>
-						<p id="aside-title-audio">Captions</p>
-					</header>
-					<p>At the San Antonio Public library you can borrow 50 items at one time for up to 3 weeks.<p>
-				</div>
-				</aside>
-			</div>
-<table border="1">
-		<tr>
-			<td> <img src="images/teensection.jpg" alt="Teen Books Section" title="Teen Books Section"/>
-			<p>You can check out up to 50 books at one time.<p/>
-			</td>
-			<td><img src="images/dvds.jpg" alt="DVD Section" title="DVD Section"/>
-			<p>You can check out 5 DVDS and 10 CDs at one time.<p/>
-			</td>
-		</tr>
-		<tr>
-			<td><img src="images/splash-mountain-1.jpg" alt="A picture of the ride Splash Mountain" title="Splash Mountain ride"/>
-			<p><cite>Splash Mountain</cite> by Michael Gray  <br/> <p/>
-			</td>
-			<td><img src="images/tomorrowland-1.jpg" alt="A picture of Tomorrowland in Magic Kingdom" title="Tomorrowland"/>
-			<p><cite>Tomorrowland</cite> by Jeremy Thompson <br/> <p/>
-			</td>
-		</tr>
-	</table>
+		<header>
+            	<h1>Guidlines for Checking Out Materials</h1>
+            </header>
+            
+            <section>
+            	<p>Hover your mouse over each item to learn more about the guidlines for checking out the item.</p>
 				
-	</section>
+				<div id="hotspots">
+					<div class="column">
+					 	<div id="hs1" class="hotspot" 
+				     		onmouseover="javascript:showText( 1 )"
+				     		onmouseout="javascript:hideOutput()"><img src="images/books.jpg" alt="Books" title="Books"/></div> 
+					</div>
+					<div class="column">
+				     	<div id="hs2" class="hotspot" 
+				     		onmouseover="javascript:showText( 2 )"
+				     		onmouseout="javascript:hideOutput()"><img src="images/comic.jpg" alt="Comic Books" title="Comic Books"/></div>  
+					</div>             
+					<div class="column">        
+				 		<div id="hs3" class="hotspot"
+				     		onmouseover="javascript:showText( 3 )"
+				     		onmouseout="javascript:hideOutput()"><img src="images/magazines.jpg" alt="Magazines" title="Magazines"/></div> 
+					</div>
+					<div class="column">
+					 	<div id="hs4" class="hotspot" 
+				     		onmouseover="javascript:showText( 4 )"
+				     		onmouseout="javascript:hideOutput()"><p>bird</p></div>
+					</div>
+				</div>
+				    
+            </section>
+            <section>
+				<div id="output">
+					<div id="output-box">
+						<p id="output-text">asdf</p>
+					</div>
+				</div>
+            </section>
+
 	</article>
-		</div>
+		
 </html>			
+						
