@@ -26,6 +26,18 @@ function startCourse()
     		sessionStorage.setItem( "course_started", "1" );
     			
 			// set the values you want to persist throughout the website here
+      		sessionStorage.setItem( "visitTitle", "visited" );
+    		sessionStorage.setItem( "visitNavigation", "unvisited" );
+    		sessionStorage.setItem( "visitOnlineResearchTitle", "unvisited" );
+    		sessionStorage.setItem( "visitDatabases", "unvisited" );
+    		sessionStorage.setItem( "visitDatabaseActivity", "unvisited" )
+    		sessionStorage.setItem( "visitForeignLanguage", "unvisited" )
+    		sessionStorage.setItem( "visitWebsites", "unvisited" )
+    		sessionStorage.setItem( "visitDictionaries", "unvisited" )
+    		sessionStorage.setItem( "visitDictionariesActivity", "unvisited" )
+    		sessionStorage.setItem( "visitQuotes", "unvisited" )
+    		sessionStorage.setItem( "visitVideo", "unvisited" )
+    		sessionStorage.setItem( "visitReferences", "unvisited" )
         }
 	}
 	
@@ -77,4 +89,99 @@ function finishCourse()
 {
 	oScorm.save();
 	oScorm.quit();
+}
+
+
+
+
+function checkAllVisited()
+{
+	var title = sessionStorage.getItem( "visitTitle" );
+	var navigation = sessionStorage.getItem( "visitNavigation" );
+	var onlineresearchtitle = sessionStorage.getItem( "visitOnlineResearchTitle" );
+	var databases = sessionStorage.getItem ( "visitDatabases" );
+	var databasesactivity = sessionStorage.getItem ( "visitDatabaseActivity" );
+	var foreignlanguage = sessionStorage.getItem( "visitForeignLanguage" );
+	var websites = sessionStorage.getItem( "visitWebsites" );
+	var dictionaries = sessionStorage.getItem( "visitDictionaries" );
+	var dictionariesactivity = sessionStorage.getItem( "visitDictionariesActivity" );
+	var quotes = sessionStorage.getItem( "visitQuotes" );
+	var video = sessionStorage.getItem( "visitVideo" );
+	var references = sessionStorage.getItem( "visitReferences" );
+
+	
+	if( title == "visited" && navigation == "visited" && onlineresearchtitle == "visited" && databases == "visited" && databaseactivity == "visited" 
+		&& foreignlanguage == "visited" && websites == "visited" && dictionaries == "visited" && dictionariesactivity == "visited"
+			&& quotes == "visited" && video == "visited" && references == "visited")
+		{
+		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
+		}
+	
+}
+
+function visitTitle()
+{
+sessionStorage.setItem( "visitTitle", "visited" );	
+checkAllVisited();
+}
+
+function visitNavigation()
+{
+sessionStorage.setItem( "visitNavigation", "visited" );	
+checkAllVisited();
+}
+
+function visitOnlineResearchTitle()
+{
+sessionStorage.setItem( "visitOnlineResearchTitle", "visited" );	
+checkAllVisited();
+}
+
+function visitDatabases()
+{
+sessionStorage.setItem( "visitDatabases", "visited" );	
+checkAllVisited();
+}
+
+
+function visitDatabaseActivity()
+{
+sessionStorage.setItem( "visitDatabaseActivity", "visited" );	
+checkAllVisited();
+}
+
+function visitForeignLanguage()
+{
+sessionStorage.setItem( "visitForeignLanguage", "visited" );	
+checkAllVisited();
+}
+
+function visitWebsites()
+{
+sessionStorage.setItem( "visitWebsites", "visited" );	
+checkAllVisited();
+}
+
+function visitDictionaries()
+{
+sessionStorage.setItem( "visitDictionaries", "visited" );	
+checkAllVisited();
+}
+
+function visitQuotes()
+{
+sessionStorage.setItem( "visitQuotes", "visited" );	
+checkAllVisited();
+}
+
+function visitVideo()
+{
+sessionStorage.setItem( "visitVideo", "visited" );	
+checkAllVisited();
+}
+
+function visitReferences()
+{
+sessionStorage.setItem( "visitReferences", "visited" );	
+checkAllVisited();
 }
