@@ -110,9 +110,7 @@ function checkAllVisited()
 	var references = sessionStorage.getItem( "visitReferences" );
 
 	
-	if( title == "visited" && navigation == "visited" && onlineresearchtitle == "visited" && databases == "visited" && databaseactivity == "visited" 
-		&& foreignlanguage == "visited" && websites == "visited" && dictionaries == "visited" && dictionariesactivity == "visited"
-			&& quotes == "visited" && video == "visited" && references == "visited")
+	if( title == "visited" && navigation == "visited" && onlineresearchtitle == "visited" && databases == "visited" && databaseactivity == "visited" && foreignlanguage == "visited" && websites == "visited" && dictionaries == "visited" && dictionariesactivity == "visited" && quotes == "visited" && video == "visited" && references == "visited")
 		{
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
 		}
@@ -165,6 +163,12 @@ checkAllVisited();
 function visitDictionaries()
 {
 sessionStorage.setItem( "visitDictionaries", "visited" );	
+checkAllVisited();
+}
+
+function visitDictionariesActivity()
+{
+sessionStorage.setItem( "visitDictionariesActivity", "visited" );	
 checkAllVisited();
 }
 
