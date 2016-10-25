@@ -105,7 +105,17 @@ a:hover
 }
 
 
+audio
+{
+	width: 230px;
+}
 
+
+
+#quiz-link
+{
+display: none;
+}
 
 
 

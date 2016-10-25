@@ -26,6 +26,16 @@ function startCourse()
     		sessionStorage.setItem( "course_started", "1" );
     			
 			// set the values you want to persist throughout the website here
+    		sessionStorage.setItem( "visitTitle", "visited" );
+    		sessionStorage.setItem( "visitNavigation", "unvisited" );
+    		sessionStorage.setItem( "visitUseOfLibrary", "unvisited" );
+    		sessionStorage.setItem( "visitGetCard", "unvisited" );
+    		sessionStorage.setItem( "visitGuidelines", "unvisited" )
+    		sessionStorage.setItem( "visitEtiquette", "unvisited" )
+    		sessionStorage.setItem( "visitMaterials", "unvisited" )
+    		sessionStorage.setItem( "visitActivity", "unvisited" )
+    		sessionStorage.setItem( "visitVideo", "unvisited" )
+    		sessionStorage.setItem( "visitReferences", "unvisited" )
         }
 	}
 	
@@ -77,4 +87,87 @@ function finishCourse()
 {
 	oScorm.save();
 	oScorm.quit();
+}
+
+function checkAllVisited()
+{
+	var title = sessionStorage.getItem( "visitTitle" );
+	var navigation = sessionStorage.getItem( "visitNavigation" );
+	var useoflibrary = sessionStorage.getItem( "visitUseOfLibrary" );
+	var getcard = sessionStorage.getItem ( "visitGetCard" );
+	var guidelines = sessionStorage.getItem ( "visitGuidelines" );
+	var etiquette = sessionStorage.getItem( "visitEtiquette" );
+	var materials = sessionStorage.getItem( "visitMaterials" );
+	var activity = sessionStorage.getItem( "visitActivity" );
+	var video = sessionStorage.getItem( "visitvideo" );
+	var references = sessionStorage.getItem( "visitReferences" );
+
+	
+	if( title == "visited" && navigation == "visited" && useoflibrary == "visited" && getcard == "visited" && guidelines == "visited" && etiquette == "visited" && materials == "visited" && activity == "visited" && video == "visited" && references == "visited")
+		{
+		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
+		}
+	
+}
+
+function visitTitle()
+{
+sessionStorage.setItem( "visitTitle", "visited" );	
+checkAllVisited();
+}
+
+function visitNavigation()
+{
+sessionStorage.setItem( "visitNavigation", "visited" );	
+checkAllVisited();
+}
+
+function visitUseOfLibrary()
+{
+sessionStorage.setItem( "visitUseofLibrary", "visited" );	
+checkAllVisited();
+}
+
+function visitGetCard()
+{
+sessionStorage.setItem( "visitGetCard", "visited" );	
+checkAllVisited();
+}
+
+
+function visitGuidelines()
+{
+sessionStorage.setItem( "visitGuidelines", "visited" );	
+checkAllVisited();
+}
+
+function visitEtiquette()
+{
+sessionStorage.setItem( "visitEtiquette", "visited" );	
+checkAllVisited();
+}
+
+function visitMaterials()
+{
+sessionStorage.setItem( "visitMaterials", "visited" );	
+checkAllVisited();
+}
+
+function visitActivity()
+{
+sessionStorage.setItem( "visitActivity", "visited" );	
+checkAllVisited();
+}
+
+function visitVideo()
+{
+sessionStorage.setItem( "visitVideo", "visited" );	
+checkAllVisited();
+}
+
+
+function visitReferences()
+{
+sessionStorage.setItem( "visitReferences", "visited" );	
+checkAllVisited();
 }
