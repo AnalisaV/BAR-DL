@@ -104,6 +104,11 @@ a:hover
 	font-weight: bold;
 }
 
+p
+{
+	font-size: 14px;
+	font-family: Arial;
+}
 
 audio
 {
@@ -117,6 +122,10 @@ audio
 display: none;
 }
 
+#image
+{
+	float:right; 
+}
 
 
 

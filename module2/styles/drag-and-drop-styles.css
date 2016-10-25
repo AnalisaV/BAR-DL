@@ -1,18 +1,18 @@
 .column
 {
 	display: table-cell;
-	padding: 50px;
+	padding: 25px;
 	width: 150px;
 }
 
 .dragger
 {
 	border: solid thin #000000;
-	background: #999999;
+	background: #fbd385;
 	
 	text-align: center;
 	height: 50px;
-	width: 150px;
+	width: 180px;
 	vertical-align: center;
 	cursor: move;
 	position: relative;
@@ -28,9 +28,9 @@
 {
 	border: dashed thin #000000;
 	height: 50px;
-	width: 150px;
+	width: 180px;
 	text-align: center;
-	background: #ccccee;
+	background: #d9d3d3;
 }
 
 [draggable=true] 

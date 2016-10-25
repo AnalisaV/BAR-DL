@@ -4,6 +4,8 @@
 		<meta charset="utf-8"/>
 		<title>Page title here</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<script language="javascript" src="scripts/hot-spots.js"></script>
+		<link href="styles/hot-spots-styles.css" rel="stylesheet" type="text/css"/>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
@@ -69,8 +71,41 @@
 			</div>
 		
 	
-  		<center><img src="images/tutor-com.jpg" alt="Tutor" title="Tutor"/><br/>
-  		<p>Tutor.com is a 24/7 online service that provides help in various subjects, including research papers!</center>
+              <section>
+            	<p>Hover your mouse over each source to see what content each one provides.</p>
+				
+				<div id="hotspots">
+					<div class="column">
+					 	<div id="hs1" class="hotspot" 
+				     		onmouseover="javascript:showText( 1 )"
+				     		onmouseout="javascript:hideOutput()"><img src="images/tutor-com.jpg" alt="Tutor.com" title="Tutor.com"/>
+				     		</div> 
+					</div>
+					<div class="column">
+				     	<div id="hs2" class="hotspot" 
+				     		onmouseover="javascript:showText( 2 )"
+				     		onmouseout="javascript:hideOutput()"><img src="images/webster.jpg" alt="Merriam-Webster" title="Merriam-Webster"/></div>  
+					</div>             
+					<div class="column">        
+				 		<div id="hs3" class="hotspot"
+				     		onmouseover="javascript:showText( 3 )"
+				     		onmouseout="javascript:hideOutput()"><p><img src="images/bartleby.jpg" alt="Bartleby.com" title="Bartleby.com"/></p></div> 
+					</div>
+					<div class="column">
+					 	<div id="hs4" class="hotspot" 
+				     		onmouseover="javascript:showText( 4 )"
+				     		onmouseout="javascript:hideOutput()"><img src="images/thesaurus.jpg" alt="Thesaurus.com" title="Thesaurus.com"/></div>
+					</div>
+				</div>
+				    
+            </section>
+            <section>
+				<div id="output">
+					<div id="output-box">
+						<p id="output-text">asdf</p>
+					</div>
+				</div>
+            </section>
 
 			
 		

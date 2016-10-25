@@ -6,22 +6,21 @@ function showText( number )
 {
 	// show the output box
 	document.getElementById( "output-box" ).style.display = "block";
-	
 	if( number == 1 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "le chat";
+		document.getElementById( "output-text" ).innerHTML = "Tutor.com is a 24/7 tutoring service that assists with various subjects, including research.";
 	}
 	else if( number == 2 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "le cheval";
+		document.getElementById( "output-text" ).innerHTML = "Merriam-Webster Dictionary has quizzes and fun facts about words. A free version is also available.";
 	}
 	else if( number == 3 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "le chien";
+		document.getElementById( "output-text" ).innerHTML = "Bartleby.com allows you to search for specific quotes at no cost.";
 	}
 	else if( number == 4 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "l'oiseau";
+		document.getElementById( "output-text" ).innerHTML = "Thesaurus.com allows you to search for specific words and synonyms, and includes a pronunciation tool.";
 	}
 }
 

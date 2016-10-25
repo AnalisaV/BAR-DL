@@ -7,8 +7,7 @@
 
 .hotspot
 {
-	border: solid thin #000000;
-	background: #999999;
+	border: none;
 	
 	text-align: center;
 	height: 50px;
@@ -28,7 +27,7 @@
 	height: 100px;
 	width: 700px;
 	text-align: center;
-	background: #ccccee;
+	background: #c7ecff;
 	
 	display: none;
 }
