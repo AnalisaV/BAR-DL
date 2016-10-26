@@ -4,68 +4,93 @@
 		<meta charset="utf-8"/>
 		<title>Page title here</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<script language="javascript" src="scripts/hot-spots.js"></script>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
 	<body onload="javascript:parent.visitActivity()">
+	
+	<div id="running-header">
+
 		<header>
-			<!--- put your course header here, it could be a graphic header or text heading --->
+			<img src="images/public-library.jpg" alt="Header" title="Header"/>
 		</header>
-		<div id="main-content">
-		<section>
-			<div id="main-info">
-				<article>
-					<header>
-						<h1><!--- put your content title here ---></h1>
-					</header>
-					
-					<img src="images/activity.jpg" alt="Activity" title="Activity"/>
-			
-				</article>
-				
-				
-				
-			</div>
-			<div id="aside-info">
-				<aside>
-					<header>
-						<p id="aside-title-audio">Audio</p>
-					</header>
-					<!--- put your audio here --->
-					<br/>
-					
-					<header>
-						<p id="aside-title-audio">Captions</p>
-					</header>
-				<div id="transcript">
-					<!--- include your transcript here --->
-				</div>
-				</aside>
-			</div>
-		</section>
-		
-		<div id="sub-navigation">
-			<nav>
-				<!--- include your sub-navigation links, if any, here --->
-			</nav>
 		</div>
-		<div id="navigation">
-			<nav>
-				<ul>
+	
+		
+<header>
+			
+   <h1>Module 1: Library 101</h1>
+   <h2>Guidelines for Checking out Materials</h2>
+</header>	
+
+<hr>
+
+
+		<section>
+		
+		 <nav>
+				 <h2> Navigation</h2>
+	
+			 	<ul>
 					<li><a href="1-title.html">Library 101</a></li>
 					<li><a href="2-navigation.html">Navigation</a></li>
 					<li><a href="3-use-of-library.html">Use of Library</a></li>
 					<li><a href="4-get-card.html">Get a card</a></li>
 					<li><a href="6-etiquette.html">Library Etiquette</a></li>
-					<li><a href="7-materials.html">Materials</a></li>
 					<li><a href="5-guidelines.html">Library Guidelines</a></li>
+					<li><a href="7-materials.html">Materials</a></li>
 					<li><a href="8-activity.html">Materials Activity</a></li>
 					<li><a href="9-video.html">Video</a></li>
-					<li><a href="10-assessment.html" id=quiz-link>Module 1 Assessment</a></li>
+					<li><a href="10-assessment.html" id="quiz-link">Module 1 Assessment</a></li>
 					<li><a href="11-certificate.html">Certificate of Completion</a></li>
 					<li><a href="12-references.html">References</a>
 				</ul>
 			</nav>
-		</div>
-	</body>
-</html>
+		</div>	
+				
+		<article>
+				
+		<header>
+            	<h1>Guidlines for Checking Out Materials</h1>
+            </header>
+            
+            <section>
+            	<p>Hover your mouse over each item to learn more about the guidelines for checking out the item.</p>
+				
+				<div id="hotspots">
+					<div class="column">
+					 	<div id="hs1" class="hotspot" 
+				     		onmouseover="javascript:showText( 1 )"
+				     		onmouseout="javascript:hideOutput()"><img src="images/books.jpg" alt="Books" title="Books"/></div> 
+					</div>
+					<div class="column">
+				     	<div id="hs2" class="hotspot" 
+				     		onmouseover="javascript:showText( 2 )"
+				     		onmouseout="javascript:hideOutput()"><img src="images/comic.jpg" alt="Comics and Magazines" title="Comics and Magazines"/></div>  
+					</div>             
+					<div class="column">        
+				 		<div id="hs3" class="hotspot"
+				     		onmouseover="javascript:showText( 3 )"
+				     		onmouseout="javascript:hideOutput()"><img src="images/dvd.jpg" alt="DVDs and CDs" title="DVDs and CDs"/></div> 
+					</div>
+					<div class="column">
+					 	<div id="hs4" class="hotspot" 
+				     		onmouseover="javascript:showText( 4 )"
+				     		onmouseout="javascript:hideOutput()"><img src="images/audiobooks.jpg" alt="Audiobooks and Ebooks" title="Audiobooks and Ebooks"/></div>
+					</div>
+				</div>
+				    
+            </section>
+            <section>
+				<div id="output">
+					<div id="output-box">
+						<p id="output-text">asdf</p>
+					</div>
+				</div>
+            </section>
+
+	</article>
+		
+</html>			
+						

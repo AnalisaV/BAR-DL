@@ -26,16 +26,16 @@ function startCourse()
     		sessionStorage.setItem( "course_started", "1" );
     			
 			// set the values you want to persist throughout the website here
-    		sessionStorage.setItem( "visitTitle", "visited" );
+      		sessionStorage.setItem( "visitTitle", "visited" );
     		sessionStorage.setItem( "visitNavigation", "unvisited" );
     		sessionStorage.setItem( "visitUseOfLibrary", "unvisited" );
     		sessionStorage.setItem( "visitGetCard", "unvisited" );
-    		sessionStorage.setItem( "visitGuidelines", "unvisited" )
-    		sessionStorage.setItem( "visitEtiquette", "unvisited" )
-    		sessionStorage.setItem( "visitMaterials", "unvisited" )
-    		sessionStorage.setItem( "visitActivity", "unvisited" )
-    		sessionStorage.setItem( "visitVideo", "unvisited" )
-    		sessionStorage.setItem( "visitReferences", "unvisited" )
+    		sessionStorage.setItem( "visitGuidelines", "unvisited" );
+    		sessionStorage.setItem( "visitEtiquette", "unvisited" );
+    		sessionStorage.setItem( "visitMaterials", "unvisited" );
+    		sessionStorage.setItem( "visitActivity", "unvisited" );
+    		sessionStorage.setItem( "visitVideo", "unvisited" );
+    		sessionStorage.setItem( "visitReferences", "unvisited" );
         }
 	}
 	
@@ -89,6 +89,9 @@ function finishCourse()
 	oScorm.quit();
 }
 
+
+
+
 function checkAllVisited()
 {
 	var title = sessionStorage.getItem( "visitTitle" );
@@ -99,11 +102,11 @@ function checkAllVisited()
 	var etiquette = sessionStorage.getItem( "visitEtiquette" );
 	var materials = sessionStorage.getItem( "visitMaterials" );
 	var activity = sessionStorage.getItem( "visitActivity" );
-	var video = sessionStorage.getItem( "visitvideo" );
+	var video = sessionStorage.getItem( "visitVideo" );
 	var references = sessionStorage.getItem( "visitReferences" );
 
 	
-	if( title == "visited" && navigation == "visited" && useoflibrary == "visited" && getcard == "visited" && guidelines == "visited" && etiquette == "visited" && materials == "visited" && activity == "visited" && video == "visited" && references == "visited")
+	if( title == "visited" && navigation == "visited" && useoflibrary == "visited" && getcard == "visited" && guidelines == "visited" && etiquette == "visited" && materials == "visited" && activity == "visited" && video == "visited" && references == "visited" )
 		{
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
 		}
@@ -124,7 +127,7 @@ checkAllVisited();
 
 function visitUseOfLibrary()
 {
-sessionStorage.setItem( "visitUseofLibrary", "visited" );	
+sessionStorage.setItem( "visitUseOfLibrary", "visited" );	
 checkAllVisited();
 }
 
@@ -164,7 +167,6 @@ function visitVideo()
 sessionStorage.setItem( "visitVideo", "visited" );	
 checkAllVisited();
 }
-
 
 function visitReferences()
 {

@@ -4,7 +4,6 @@
 		<meta charset="utf-8"/>
 		<title>Page title here</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
-		<script language="javascript" src="scripts/hot-spots.js"></script>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
@@ -21,7 +20,7 @@
 <header>
 			
    <h1>Module 1: Library 101</h1>
-   <h2>Available Materials</h2>
+   <h2>Internet Guidelines</h2>
 </header>	
 
 <hr>
@@ -38,11 +37,11 @@
 					<li><a href="3-use-of-library.html">Use of Library</a></li>
 					<li><a href="4-get-card.html">Get a card</a></li>
 					<li><a href="6-etiquette.html">Library Etiquette</a></li>
-					<li><a href="7-materials.html">Materials</a></li>
 					<li><a href="5-guidelines.html">Library Guidelines</a></li>
+					<li><a href="7-materials.html">Materials</a></li>
 					<li><a href="8-activity.html">Materials Activity</a></li>
 					<li><a href="9-video.html">Video</a></li>
-					<li><a href="10-assessment.html" id=quiz-link>Module 1 Assessment</a></li>
+					<li><a href="10-assessment.html" id="quiz-link">Module 1 Assessment</a></li>
 					<li><a href="11-certificate.html">Certificate of Completion</a></li>
 					<li><a href="12-references.html">References</a>
 				</ul>
@@ -51,46 +50,37 @@
 				
 		<article>
 				
-		<header>
-            	<h1>Guidlines for Checking Out Materials</h1>
-            </header>
-            
-            <section>
-            	<p>Hover your mouse over each item to learn more about the guidelines for checking out the item.</p>
+		<div id="aside-info">
+				<aside>
+					<header>
+						<p id="aside-title-audio">Audio</p>
+					</header>
+					<!--- put your audio here --->
+					<br/>
+					
+					
+					<header>
+						<p id="aside-title-audio">Captions</p>
+					</header>
+				<div id="transcript">
+<p>T			<p>The library has internet access, free Wi-Fi and printing services available at all 30 locations. Internet access time is up to 3 hours.</br>
+				Wi-Fi access is available 24/7 and no password is needed. You’ll just need to agree to the User Agreement once you click in a browser.</p>
+				The only service the library charges for is printing. It is only twenty cents per page for black and white copies and $1 per color page.
+				</div>
+				</aside>
+			</div>
+				<img src="images/internet-icon.jpg" alt="Internet Icon" title="Internet Icon"/>
 				
-				<div id="hotspots">
-					<div class="column">
-					 	<div id="hs1" class="hotspot" 
-				     		onmouseover="javascript:showText( 1 )"
-				     		onmouseout="javascript:hideOutput()"><img src="images/books.jpg" alt="Books" title="Books"/></div> 
-					</div>
-					<div class="column">
-				     	<div id="hs2" class="hotspot" 
-				     		onmouseover="javascript:showText( 2 )"
-				     		onmouseout="javascript:hideOutput()"><img src="images/comic.jpg" alt="Comics and Magazines" title="Comics and Magazines"/></div>  
-					</div>             
-					<div class="column">        
-				 		<div id="hs3" class="hotspot"
-				     		onmouseover="javascript:showText( 3 )"
-				     		onmouseout="javascript:hideOutput()"><img src="images/dvd.jpg" alt="DVDs and CDs" title="DVDs and CDs"/></div> 
-					</div>
-					<div class="column">
-					 	<div id="hs4" class="hotspot" 
-				     		onmouseover="javascript:showText( 4 )"
-				     		onmouseout="javascript:hideOutput()"><img src="images/audiobooks.jpg" alt="Audiobooks and Ebooks" title="Audiobooks and Ebooks"/></div>
-					</div>
-				</div>
-				    
-            </section>
-            <section>
-				<div id="output">
-					<div id="output-box">
-						<p id="output-text">asdf</p>
-					</div>
-				</div>
-            </section>
-
+				<p>The library has internet access, free Wi-Fi and printing services available at all locations.</br>
+				Internet access time is up to 3 hours.</br>
+				Wi-Fi access is available 24/7 and no password is needed. You’ll just need to agree to the User Agreement once you click in a browser.</p>
+				
+				<p>Printing is the only service that the library does charge for.</br>
+				Printing Costs: .20 cents per page</br>
+        	    $1.00 for color per page</p>
+				
+	</section>
 	</article>
-		
+		</div>
 </html>			
-						
+				

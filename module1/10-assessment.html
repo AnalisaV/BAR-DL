@@ -4,12 +4,12 @@
 		<meta charset="utf-8"/>
 		<title>Page title here</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
-		<script src="scripts/quiz.js" language="javascript">
+		<script src="scripts/quiz.js" language="javascript"></script>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
 	<body>
-	
+	<form action="javascript:processForm()" id="quiz1" name="quiz1">
 	<div id="running-header">
 
 		<header>
@@ -20,16 +20,16 @@
 		
 <header>
 			
-   <h1>Module 1: Library 101</h1>
+   <h1>Module 1: Use of Library</h1></br>
    <h2>Assessment</h2>
 </header>	
 
 <hr>
 
-<form action="javascript:processForm()" id="quiz1" name="quiz1">
+
 		<section>
 		
-		 <nav>
+		<nav>
 				 <h2> Navigation</h2>
 	
 			 	<ul>
@@ -38,11 +38,11 @@
 					<li><a href="3-use-of-library.html">Use of Library</a></li>
 					<li><a href="4-get-card.html">Get a card</a></li>
 					<li><a href="6-etiquette.html">Library Etiquette</a></li>
-					<li><a href="7-materials.html">Materials</a></li>
 					<li><a href="5-guidelines.html">Library Guidelines</a></li>
+					<li><a href="7-materials.html">Materials</a></li>
 					<li><a href="8-activity.html">Materials Activity</a></li>
 					<li><a href="9-video.html">Video</a></li>
-					<li><a href="10-assessment.html">Module 1 Assessment</a></li>
+					<li><a href="10-assessment.html" id="quiz-link">Module 1 Assessment</a></li>
 					<li><a href="11-certificate.html">Certificate of Completion</a></li>
 					<li><a href="12-references.html">References</a>
 				</ul>
@@ -68,12 +68,124 @@
 				</div>
 				</aside>
 			</div>
-				<center>
-					<img src="images/assessment2.jpg" alt="Assessment" title="Assessment"/>
-				</center>
+				<form action="javascript:processForm();" id="quiz1" name="quiz1">
+
+<p>Please selected your answer from the following choices</p>
+
+<label for="question1">1. The public library is a ________ source for information.</label>
+<br/>
+
+<input type="radio" id="question1" name="question1" value="0">
+Pay as you go</input><br/>
+<input type="radio" id="question1" name="question1" value="1">
+Free</input><br/>
+<input type="radio" id="question1" name="question1" value="2">
+Grant funded</input><br/><br/>
+
+
+
+<label for="question2">2.	The ____________ desk is the contact point to get a library card and check out books.</label>
+<br/>
+
+<input type="radio" id="question2" name="question2" value="0">
+Circulation</input><br/>
+<input type="radio" id="question2" name="question2" value="1">
+Reference</input><br/>
+<input type="radio" id="question2" name="question2" value="2">
+Front</input><br/><br/>
+
+
+<label for="question3">3. Within San Antonio, there are _____ library locations.</label>
+<br/>
+
+<input type="radio" id="question3" name="question3" value="0">
+25</input><br/>
+<input type="radio" id="question3" name="question3" value="1">
+30</input><br/>
+<input type="radio" id="question3" name="question3" value="2">
+35</input><br/><br/>
+
+
+<label for="question4">4. In order to renew library materials, your account must be ________.</label>
+<br/>
+
+<input type="radio" id="question4" name="question4" value="0">
+Open</input><br/>
+<input type="radio" id="question4" name="question4" value="1">
+In good standing</input><br/>
+<input type="radio" id="question4" name="question4" value="2">
+Attached to a bank account</input><br/><br/>
+
+
+<label for="question5">5.	What is the maximum amount of fees a patron accrues before borrowing privileges are suspended?</label>
+<br/>
+
+<input type="radio" id="question5" name="question5" value="0">
+$15</input><br/>
+<input type="radio" id="question5" name="question5" value="1">
+$12</input><br/>
+<input type="radio" id="question5" name="question5" value="2">
+$10</input><br/><br/>
+
+
+<label for="question6">6.	The loan period for books, CDs, DVDs and magazines is ______________.</label>
+<br/>
+
+<input type="radio" id="question6" name="question6" value="0">
+2 weeks</input><br/>
+<input type="radio" id="question6" name="question6" value="1">
+3 weeks</input><br/>
+<input type="radio" id="question6" name="question6" value="2">
+4 weeks</input><br/><br/>
+
+<label for="question7">7.	To get a library card, a patron must present a current ID and ____________.</label>
+<br/>
+<p></p>
+<input type="radio" id="question7" name="question7" value="0">
+a valid credit card</input><br/>
+<input type="radio" id="question7" name="question7" value="1">
+a voter registration card</input><br/>
+<input type="radio" id="question7" name="question7" value="2">
+proof of residency</input><br/><br/>
+
+
+<label for="question8">8.	The number of books a patron can check out at one time is ______.</label>
+<br/>
+
+<input type="radio" id="question8" name="question8" value="0">
+30</input><br/>
+<input type="radio" id="question8" name="question8" value="1">
+40</input><br/>
+<input type="radio" id="question8" name="question8" value="2">
+50</input><br/><br/>
+
+
+<label for="question9">9.	Which material is not available to be on hold?</label>
+<br/>
+
+<input type="radio" id="question9" name="question9" value="0">
+Express Collection</input><br/>
+<input type="radio" id="question9" name="question9" value="1">
+Books</input><br/>
+<input type="radio" id="question9" name="question9" value="2">
+DVDs</input><br/><br/>
+
+
+<label for="question10">10.	Which valid form of ID can teens use to get a library card?</label>
+<br/>
+
+<input type="radio" id="question10" name="question10" value="0">
+Birth Certificate</input><br/>
+<input type="radio" id="question10" name="question10" value="1">
+High School ID</input><br/>
+<input type="radio" id="question10" name="question10" value="2">
+Bank Account information</input><br/><br/>
+<input type="submit" value="Submit Answers"/>
+</form>
 				
 	</section>
 	</article>
 		</div>
 </html>			
 				
+						
