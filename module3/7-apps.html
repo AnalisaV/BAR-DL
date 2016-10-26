@@ -2,40 +2,79 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
-		<title>Page title here</title>
+		<title>---</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
-		
+		<script src="scripts/slideshow.js" language="javascript"></script>
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
-	<body>
+	<body onload="javascript:parent.visitSlideshow()">
+	
+	<div id="running-header">
+
 		<header>
-			<!--- put your course header here, it could be a graphic header or text heading --->
+			<img src="images/public-library.jpg" alt="Header" title="Header"/>
+		</header>
+		</div>
+		
+		<header>
+			<img src="images/cell-phone.png" alt="Cell Phone" title="Cell Phone"/>
 		</header>
 		<div id="main-content">
 		<section>
 			<div id="main-info">
 				<article>
 					<header>
-						<h1><!--- put your content title here ---></h1>
+						<center><h1>SAPL Mobile Apps</h1></center>
 					</header>
 					
-					<img src="images/on-the-go.jpg.png" alt="Apps" title="Apps"/>
-			
+					
+					<h1 id="slideshowtitle">Moble Apps</h1>
+					<img id="slideshowimage" src="images/mysapl.png" alt="" title=""/>
+					<p id="slideshowdescription"><p>The mySAPL app works on Android and Apple devices. The phone app allows you to do the following:</p> </br>
+					<ul>
+					<li> Browse the catalog</li>
+					<li> Check the status of your account</li>
+					<li> Place holds on library materials, such as manga books, music CDs and DVDs</li>
+					<li> See a map of all the SAPL libraries.</li>
+					</ul> </br>
+					<p> If you have an IPad, you’ll be able to use all of the app’s features including:</p>
+					</br>
+					<ul>
+						<li>Pay fines</li>
+						<li> Re-new items.</li>
+					</ul>
+			   		</p>
+					
+					<a href="#" onclick="javascript:goPrevious()">Previous</a>|
+					<a href="#" onclick="javascript:goNext()">Next</a>
+					<br/>
+					
+					<a href="#" onclick="javascript:swap( 0 )">MySAPL</a>|
+					<a href="#" onclick="javascript:swap( 1 )">Overdrive</a>|
+					<a href="#" onclick="javascript:swap( 2 )">OneClickDigital</a>|
+					<a href="#" onclick="javascript:swap( 3 )">Freegal</a>|
+					<a href="#" onclick="javascript:swap( 4 )">App Activity</a>
+					<br/>
+					
+				
+					
+				
 				</article>
 			</div>
 			<div id="aside-info">
 				<aside>
-					<header>
+				<header>
 						<p id="aside-title-audio">Audio</p>
 					</header>
 					<!--- put your audio here --->
 					<br/>
+						
 					
 					<header>
 						<p id="aside-title-audio">Captions</p>
 					</header>
 				<div id="transcript">
-					<!--- include your transcript here --->
+					<!-- content goes here -->
 				</div>
 				</aside>
 			</div>
@@ -48,18 +87,29 @@
 		</div>
 		<div id="navigation">
 			<nav>
-				<a href="1-title.html">Module 3</a>
-				<a href="2-navigation">Navigation</a>
-				<a href="3-videos.html">Videos</a>
-				<a href="4-music.html">Music</a>
-				<a href="5-music-activity.html">Music Activity</a>
-				<a href="6-tutor.html">Online Tutor</a>
-				<a href="8-apps-activity.html">Apps Activity</a>
-				<a href="9-video">Video</a>
-				<a href="10-assessment.html">Module 2 Assesment</a>
-				<a href="11-certificate.html">Certificate of Completion</a>
-				<a href="12-references.html">References</a>
-			</nav>
+  			<ul>
+    			<li><a href="2-navigation.html">Navigation</a></li>
+				<li><a href="3-videos.html">Videos</a></li>
+				<li><a href="4-music.html">Music</a></li>
+				<li><a href="5-music-activity.html">Music Activity</a></li>
+				<li><a href="6-tutor.html">Online Tutor</a></li>
+				<li><a href="7-apps.html">Mobile Apps</a></li>
+					<ul>
+						<li><a href="apps-2.html">MySAPL App</a></li>
+						<li><a href="apps-3.html">Overdrive App</a></li>
+						<li><a href="apps-4.html">OneClickDigital App</a></li>
+						<li><a href="apps-5.html">Freegal App</a></li>
+					</ul>
+				<li><a href="8-apps-activity.html">Apps Activity</a></li>
+				<li><a href="9-video">Video</a></li>
+				<li><a href="10-assessment.html">Module 3 Assesment</a></li>
+				<li><a href="11-certificate.html">Certificate of Completion</a></li>
+				<li><a href="12-references.html">References</a></li>
+	
+ 			 </ul>
+		</nav>
 		</div>
 	</body>
 </html>
+
+		
