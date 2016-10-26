@@ -111,6 +111,44 @@ audio
 }
 
 
+
+.column
+{
+	display: table-cell;
+	padding: 10px;
+	width: 200px;
+}
+
+.hotspot
+{
+	background: #999999;
+	
+	text-align: center;
+	height: 50px;
+	width: 150px;
+	vertical-align: center;
+	position: relative;
+}
+
+.hotspot p
+{
+	font-weight: bold;
+}
+
+#output-box
+{
+	border: dashed thin #000000;
+	height: 100px;
+	width: 700px;
+	text-align: center;
+	background: #ccccee;
+	
+	display: none;
+	
+}
+
+
+
 /*
 body
 {
@@ -192,46 +230,4 @@ audio
 {
 	width: 230px;
 }*/
-
-.column
-{
-	display: table-cell;
-	padding: 10px;
-	width: 200px;
-}
-
-.hotspot
-{
-	background: #999999;
-	
-	text-align: center;
-	height: 50px;
-	width: 150px;
-	vertical-align: center;
-	position: relative;
-}
-
-.hotspot p
-{
-	font-weight: bold;
-}
-
-#output-box
-{
-	border: dashed thin #000000;
-	height: 100px;
-	width: 700px;
-	text-align: center;
-	background: #ccccee;
-	
-	display: none;
-	
-}
-
-#quiz-link
-{
-display: none;
-}
-
-
 
