@@ -30,14 +30,14 @@ function startCourse()
     		sessionStorage.setItem( "visitNavigation", "unvisited" );
     		sessionStorage.setItem( "visitOnlineResearchTitle", "unvisited" );
     		sessionStorage.setItem( "visitDatabases", "unvisited" );
-    		sessionStorage.setItem( "visitDatabaseActivity", "unvisited" )
-    		sessionStorage.setItem( "visitForeignLanguage", "unvisited" )
-    		sessionStorage.setItem( "visitWebsites", "unvisited" )
-    		sessionStorage.setItem( "visitDictionaries", "unvisited" )
-    		sessionStorage.setItem( "visitDictionariesActivity", "unvisited" )
-    		sessionStorage.setItem( "visitQuotes", "unvisited" )
-    		sessionStorage.setItem( "visitVideo", "unvisited" )
-    		sessionStorage.setItem( "visitReferences", "unvisited" )
+    		sessionStorage.setItem( "visitDatabaseActivity", "unvisited" );
+    		sessionStorage.setItem( "visitForeignLanguage", "unvisited" );
+    		sessionStorage.setItem( "visitWebsites", "unvisited" );
+    		sessionStorage.setItem( "visitDictionaries", "unvisited" );
+    		sessionStorage.setItem( "visitDictionariesActivity", "unvisited" );
+    		sessionStorage.setItem( "visitQuotes", "unvisited" );
+    		sessionStorage.setItem( "visitVideo", "unvisited" );
+    		sessionStorage.setItem( "visitReferences", "unvisited" );
         }
 	}
 	
@@ -110,7 +110,7 @@ function checkAllVisited()
 	var references = sessionStorage.getItem( "visitReferences" );
 
 	
-	if( title == "visited" && navigation == "visited" && onlineresearchtitle == "visited" && databases == "visited" && databaseactivity == "visited" && foreignlanguage == "visited" && websites == "visited" && dictionaries == "visited" && dictionariesactivity == "visited" && quotes == "visited" && video == "visited" && references == "visited")
+	if( title == "visited" && navigation == "visited" && onlineresearchtitle == "visited" && databases == "visited" && databaseactivity == "visited" && foreignlanguage == "visited" && websites == "visited" && dictionaries == "visited" && dictionariesactivity == "visited" && quotes == "visited" && video == "visited" && references == "visited" )
 		{
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
 		}
