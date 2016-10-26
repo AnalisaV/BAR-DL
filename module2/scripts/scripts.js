@@ -100,7 +100,7 @@ function checkAllVisited()
 	var navigation = sessionStorage.getItem( "visitNavigation" );
 	var onlineresearchtitle = sessionStorage.getItem( "visitOnlineResearchTitle" );
 	var databases = sessionStorage.getItem ( "visitDatabases" );
-	var databasesactivity = sessionStorage.getItem ( "visitDatabaseActivity" );
+	var databaseactivity = sessionStorage.getItem ( "visitDatabaseActivity" );
 	var foreignlanguage = sessionStorage.getItem( "visitForeignLanguage" );
 	var websites = sessionStorage.getItem( "visitWebsites" );
 	var dictionaries = sessionStorage.getItem( "visitDictionaries" );
