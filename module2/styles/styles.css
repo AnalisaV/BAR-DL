@@ -3,7 +3,7 @@
     border: 1px solid gray;
     height:100%;
     background: #d8e8fe;
-    width: 60%;
+    width: 50%;
    
 }
 
@@ -39,7 +39,7 @@ body
 
 nav {
     float: left;
-    max-width: 170px;
+    max-width: 100px;
     margin: 0;
     padding: 1em;
 }
@@ -58,7 +58,7 @@ nav {
 #aside-info
 {
 	float: right;
-	width: 250px;
+	width: 150px;
 	horizontal-align: top;
 	padding-left: 10px;
 }
@@ -68,8 +68,8 @@ nav {
 	color: green;
 	font-size: 12px;
 	overflow: auto;
-	height: 321px;
-	width: 233px;
+	height: 521px;
+	width: 153px;
 }
 
 nav ul {
@@ -82,7 +82,7 @@ nav ul a {
 }
 
 article {
-    margin-left: 150px;
+    margin-left: 100px;
     border-left: 2px solid orange;
     border-width:100%;
     padding: 2em;
@@ -123,7 +123,10 @@ audio
 	float:right; 
 }
 
-
+#quiz-link
+{
+display: none;
+}
 
 
 /*
