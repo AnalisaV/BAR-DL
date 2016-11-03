@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title></title>
+		<link href="styles/drag-and-drop-styles.css" rel="stylesheet" type="text/css"/>
+		<script language="javascript" src="scripts/drag-and-drop.js"></script>
+	</head>
+	  
+    <body>
+    	<article>
+        	<header>
+            	<h1>Drag and Drop Activity</h1>
+            </header>
+            
+            <section>
+         		<form name="dd1" onsubmit="javascript:processForm(); return false;">  
+				<p>Match the application to its appropriate characteristic.</p>
+				
+				<div class="column">
+						<h3>Draggers</h3>
+					 	<div id="d1" value="2" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>MySAPL</p></div><br/>  
+				     	<div id="d2" value="3" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>Overdrive</p></div><br/>                        
+				 		<div id="d3" value="1" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>OneClickDigital</p></div><br/>  
+					 	<div id="d4" value="3" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+					     		ondragend="return endDrag( event )"><p>Freegal</p></div><br/>  
+						<div id="d5" value="0" class="dragger" draggable="true"
+				     		ondragstart="return startDrag( event )"
+				     		ondragend="return endDrag( event )"><p>iTunes</p></div><br/> 
+						
+				</div>
+				
+				    
+				<div class="column">
+						<h3>Dragger Bays</h3>
+				     	<div id="db1" value="0" class="draggerbay" 
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>Paid Music Service</p></div><br/>                        
+				 		<div id="db2" value="1" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>Listen to a Book</p></div><br/>  
+					 	<div id="db3" value="2" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>Used for San Antonio Library Resoures</p></div><br/> 
+					 	<div id="db4" value="3" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>Used to doenload E-books</p></div><br/>  
+						<div id="db5" value="4" class="draggerbay"
+				     		ondrop="return dropDragger( event )"
+				     		ondragover="return false"
+				     		ondragenter="return enterDragger( event )"><p>Download Free Music</p></div><br/>  
+				</div>
+				<p id="response">&nbsp;</p>
+				<input type="submit" name="button" value="Submit Your Answer"/><br/>
+				</form>
+            </section>
+
+        </article>
+    	<footer>
+        </footer>
+    </body>
+</html>
