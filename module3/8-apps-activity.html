@@ -4,25 +4,58 @@
 		<meta charset="utf-8"/>
 		<title>Page title here</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+		<link href="styles/hot-spots-styles.css" rel="stylesheet" type="text/css"/>
+		<script language="javascript" src="scripts/hot-spots.js"></script>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
 	<body>
+	
+	<div id="running-header">
+
 		<header>
-			<h1>Other Useful Resources</h1>
+			<img src="images/public-library.jpg" alt="Header" title="Header"/>
 		</header>
-		<div id="main-content">
+		</div>
+	
+		
+<header>
+			
+   <h1>Module 3: Other Useful Resources</h1>
+</header>	
+
+<hr>
+
+
+		<div class="main-info">
+			
+		
 		<section>
-			<div id="main-info">
+		
+		<nav>
+  			<ul>
+    				<li><a href="2-navigation.html">Navigation</a>
+    			<li><a href="7-apps.html">mySAPL</a></li>
+				<li><a href="apps-2.html">Overdrive</a></li>
+				<li><a href="apps-3.html">OneClick</a></li>
+				<li><a href="5-music.html">Freegal</a></li>
+				<li><a href="6-tutor.html">Online Tutoring</a></li>
+				<li> <a href="3-videos.html">Video</a></li>
+				<li>Reveiw</li>
+				<li>Reminders</li>
+				<li><a href="12-references.html">Referances</a></li>
+				<li>Assessment</li>
+				<li>Certificate</li>
+	
+ 			 </ul>
+		</nav>
+		
+
 				<article>
-					<header>
-						<h1>Review Activity</h1>
-					</header>
-					
-					<img src="images/mobile-app-review-activity.jpg.png" alt="Apps Activity" title="Apps Activity"/>
-				
-				</article>
-			</div>
+		
+	<!--  <img src="images/module2-content.jpg" alt="Title" title="Title"/>-->
+			
+			
 			<div id="aside-info">
 				<aside>
 					<header>
@@ -31,35 +64,68 @@
 					<!--- put your audio here --->
 					<br/>
 					
+					
 					<header>
 						<p id="aside-title-audio">Captions</p>
 					</header>
 				<div id="transcript">
+					<p> In this module you will learn about many of the other recourses the library has to offer for teens.</p>
 					<!--- include your transcript here --->
 				</div>
 				</aside>
+				
+			
 			</div>
+			
+			
+			<h1>App Activity</h1>
+			
+			<section>
+            	<p>Hover your mouse over each item to check your understanding of the apps avalible from the public library.</p>
+				
+				<div id="hotspots">
+					<div class="column">
+					 	<div id="hs1" class="hotspot" 
+				     		onmouseover="javascript:showText( 1 )"
+				     		onmouseout="javascript:hideOutput()"><p>mySAPL</p></div> 
+					</div>
+					<div class="column">
+				     	<div id="hs2" class="hotspot" 
+				     		onmouseover="javascript:showText( 2 )"
+				     		onmouseout="javascript:hideOutput()"><p>Overdrive</p></div>  
+					</div>             
+					<div class="column">        
+				 		<div id="hs3" class="hotspot"
+				     		onmouseover="javascript:showText( 3 )"
+				     		onmouseout="javascript:hideOutput()"><p>OneClickDigital</p></div> 
+					</div>
+					<div class="column">
+					 	<div id="hs4" class="hotspot" 
+				     		onmouseover="javascript:showText( 4 )"
+				     		onmouseout="javascript:hideOutput()"><p>Freegal</p></div>
+					</div>
+				</div>
+				    
+            </section>
+			<section>
+				<div id="output">
+					<div id="output-box">
+						<p id="output-text">asdf</p>
+					</div>
+				</div>
+            </section>
+            
+			</br></br></br></br>
+			
+				<a href="apps-4.html">Back</a>
+				<a href="6-tutor.html">Continue</a>
+			
+			</article>
+			
+				
 		</section>
-		
-		<div id="sub-navigation">
-			<nav>
-				<!--- include your sub-navigation links, if any, here --->
-			</nav>
 		</div>
-		<div id="navigation">
-			<nav>
-				<a href="1-title.html">Module 3</a>
-				<a href="2-navigation">Navigation</a>
-				<a href="3-videos.html">Videos</a>
-				<a href="4-music.html">Music</a>
-				<a href="5-music-activity.html">Music Activity</a>
-				<a href="6-tutor.html">Online Tutor</a>
-				<a href="7-apps.html">Mobile Apps</a>
-				<a href="9-video">Video</a>
-				<a href="10-assessment.html">Module 2 Assesment</a>
-				<a href="11-certificate.html">Certificate of Completion</a>
-				<a href="12-references.html">References</a>
-			</nav>
-		</div>
+		</article>
+
 	</body>
 </html>
