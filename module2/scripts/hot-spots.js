@@ -12,7 +12,7 @@ function showText( number )
 	}
 	else if( number == 2 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "Merriam-Webster Dictionary has quizzes and fun facts about words. A free version is also available.";
+		document.getElementById( "output-text" ).innerHTML = "Merriam-Webster.com has quizzes and fun facts about words. A free version is also available.";
 	}
 	else if( number == 3 )
 	{
