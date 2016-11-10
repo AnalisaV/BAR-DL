@@ -84,6 +84,43 @@ function reportScores()
 	oScorm.save();
 }
 
+//THIS IS NEW PART******
+
+//This function adds the student's name to the certificate page.
+function visitCertificate()
+{
+	var learner_name = oScorm.get( "cmi.core.student_name" );
+	document.getElementById( "content-frame" ).
+contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
+}
+
+// This function reports the score from the assessment to the LMS
+// This should only be called when the user submits the answers to the quiz
+function reportScores( score )
+{	
+
+
+ //*************important part is FOUR LINES**********
+	oScorm.set("cmi.core.score.raw", score );
+	oScorm.set("cmi.core.score.min", 0 );
+	oScorm.set("cmi.core.score.max", 100 );
+	
+	if( score >=70 )
+		{
+		oScorm.set( "cmi.core.lesson_status", "passed" );
+		}
+	else
+		{
+		oScorm.set( "cmi.core.lesson_status", "failed" );
+		}
+	
+	alert( "Reported " + score + " as your score." );
+
+	oScorm.save();
+}
+
+//*****ending new section****
+
 // This function is called when the window is closed.  It saves and quits the course.
 function finishCourse()
 {
