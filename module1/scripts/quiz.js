@@ -66,11 +66,14 @@ function processForm()
 	{ 
 		
 		alert ("Congratulations! You passed this quiz" );
+		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
+
 	}
 	
 	else
 	{
 		alert ( "Your score is " + score + "%. You did not pass. Please try again." );
 	}
-}
+	parent.reportScores( score );
 
+}
