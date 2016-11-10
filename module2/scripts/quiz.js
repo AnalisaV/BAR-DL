@@ -56,24 +56,25 @@ if( q9[ 1 ].checked )
 	numberOfCorrectResponses = numberOfCorrectResponses + 1;
 	}
 
-var q10 =document.forms.quiz1.question10;
-if( q10[ 1 ].checked )
+	var q10 =document.forms.quiz1.question10;
+	if( q10[ 1 ].checked )
 	{
 	numberOfCorrectResponses = numberOfCorrectResponses + 1;
 	}
 
 
-var score = numberOfCorrectResponses / 10;
+	var score = numberOfCorrectResponses / 10;
 
-if( score > .6 )
-{
-alert( "Congratulations, you passed!" );
- }
-else
+	if( score > .7 )
 	{
-	alert( "Sorry, you did not pass." );
+		alert( "Congratulations, you passed!" );
+		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
 	}
-
+	else
+	{
+		alert( "Sorry, you did not pass." );
+	}
+	parent.reportScores( score );
 
 }
 
