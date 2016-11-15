@@ -1,18 +1,17 @@
 .column
 {
 	display: table-cell;
-	padding: 10px;
+	padding: 5px;
 	width: 100px;
 }
 
 .hotspot
 {
-	border: solid thin #000000;
-	background: #999999;
+	border: none;
 	
 	text-align: center;
 	height: 50px;
-	width: 150px;
+	width: 125px;
 	vertical-align: center;
 	position: relative;
 }
@@ -26,9 +25,10 @@
 {
 	border: dashed thin #000000;
 	height: 100px;
-	width: 700px;
+	width: 540px;
 	text-align: center;
-	background: #ccccee;
+	background: #c7ecff;
 	
 	display: none;
 }
+
