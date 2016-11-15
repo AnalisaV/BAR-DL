@@ -77,9 +77,19 @@ function initializeSCORM()
 	}
 }
 
+
+
+//This function adds the student's name to the certificate page.
+function visitCertificate()
+{
+	var learner_name = oScorm.get( "cmi.core.student_name" );
+	document.getElementById( "content-frame" ).
+contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
+}
+
 // This function reports the score from the assessment to the LMS
 // This should only be called when the user submits the answers to the quiz
-function reportScores()
+function reportScores( score )
 {	
 	
 
@@ -112,16 +122,6 @@ function finishCourse()
 	oScorm.quit();
 }
 
-
-
-
-//This function adds the student's name to the certificate page.
-function visitCertificate()
-{
-	var learner_name = oScorm.get( "cmi.core.student_name" );
-	document.getElementById( "content-frame" ).
-contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
-}
 
 
 function checkAllVisited()
