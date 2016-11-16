@@ -67,7 +67,7 @@ if( q9[ 1 ].checked )
 
 	if( score > .7 )
 	{
-		alert( "Congratulations, you passed!" );
+		alert( "Congratulations, you passed! ****Still working on certificate****" );
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
 	}
 	else
