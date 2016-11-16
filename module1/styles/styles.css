@@ -162,6 +162,10 @@ audio
 	display: none;
 }
 
+#certificate-link
+{
+	display: none;
+}
 
 /*
 body
