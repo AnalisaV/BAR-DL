@@ -65,7 +65,7 @@ if( q9[ 1 ].checked )
 
 	var score = numberOfCorrectResponses / 10;
 
-	if( score > 70 )
+	if( score > .7 )
 	{
 		alert( "Congratulations, you passed! ****Still working on certificate****" );
 		location.assign("14-certificate.html");
