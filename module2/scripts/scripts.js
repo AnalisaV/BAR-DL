@@ -92,15 +92,18 @@ contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
 function reportScores( score )
 {	
 	
-
+	score = score * 100;
  //*************important part is FOUR LINES**********
 	oScorm.set("cmi.core.score.raw", score );
 	oScorm.set("cmi.core.score.min", 0 );
 	oScorm.set("cmi.core.score.max", 100 );
 	
 	
-	if( score >=70 )
-		{
+	if( score >= 70 )
+		{		
+		
+		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
+		
 		oScorm.set( "cmi.core.lesson_status", "passed" );
 		}
 	else
