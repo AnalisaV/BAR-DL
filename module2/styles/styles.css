@@ -46,7 +46,10 @@ body
 	font-family: Arial;
 }
 
-
+#certificate
+{
+	position: absolute;
+}
 
 
 nav {
