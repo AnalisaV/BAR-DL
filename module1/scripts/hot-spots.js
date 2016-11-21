@@ -13,7 +13,7 @@ function showText( number )
 	}
 	else if( number == 2 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "Magazines, comic books and mangas all fall under the books catagory. They are included in the 50 book limit.";
+		document.getElementById( "output-text" ).innerHTML = "Magazines, comic books and mangas all fall under the books category. They are included in the 50 book limit.";
 	}
 	else if( number == 3 )
 	{
