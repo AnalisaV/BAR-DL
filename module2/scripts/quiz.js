@@ -63,7 +63,7 @@ if( q9[ 1 ].checked )
 	}
 
 
-	var score = numberOfCorrectResponses / 10;
+	var score = (numberOfCorrectResponses / 10) * 100;
 
 	if( score >= .7 )
 	{
@@ -73,7 +73,7 @@ if( q9[ 1 ].checked )
 	}
 	else
 	{
-		alert( "Sorry, you did not pass." );
+		alert ( "Your score is " + score + "%. You did not pass. Please try again." );
 	}
 	parent.reportScores( score );
 
