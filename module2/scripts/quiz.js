@@ -65,7 +65,7 @@ if( q9[ 1 ].checked )
 
 	var score = numberOfCorrectResponses / 10;
 
-	if( score >= .7 )
+	if( score >= .7 );
 	{
 		alert( "Congratulations, you passed!" );
 		parent.document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
