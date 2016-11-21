@@ -92,7 +92,7 @@ contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
 function reportScores( score )
 {	
 	
-	score = score * 100;
+	
  //*************important part is FOUR LINES**********
 	oScorm.set("cmi.core.score.raw", score );
 	oScorm.set("cmi.core.score.min", 0 );
