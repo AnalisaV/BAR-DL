@@ -28,6 +28,16 @@ text-align:center;
 
 }
 
+#name
+{
+	z-index: 100;
+	position: absolute; 
+	color: black; 
+	left: 215px; 
+	top: 215px; 
+}
+
+
 body
 {
 	margin: 0px;
@@ -35,6 +45,12 @@ body
 	font-size: 12px;
 	font-family: Arial;
 }
+
+#image
+{
+	position: absolute;
+}
+
 
 
 nav {
