@@ -9,19 +9,19 @@ function showText( number )
 	
 	if( number == 1 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "info about mySAPL";
+		document.getElementById( "output-text" ).innerHTML = "Used for finding books, library locations, and managing your library account.";
 	}
 	else if( number == 2 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "Info about Overdrive";
+		document.getElementById( "output-text" ).innerHTML = "Used for renting ebooks.";
 	}
 	else if( number == 3 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "Info about OneClickDigital";
+		document.getElementById( "output-text" ).innerHTML = "Used for renting audeo books.";
 	}
 	else if( number == 4 )
 	{
-		document.getElementById( "output-text" ).innerHTML = "Info about Freegal";
+		document.getElementById( "output-text" ).innerHTML = "Used for dounloading music for free.";
 	}
 }
 

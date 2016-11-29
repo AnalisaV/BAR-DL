@@ -31,12 +31,12 @@ function processForm()
 	
 	if( bCorrect )
 	{
-		document.getElementById( "response" ).innerHTML = "Correct!";
+		document.getElementById( "response" ).innerHTML = "Correct! <a href='references.html'>click here to continue</a>"
 	}
 	else
 	{
 		// link back to the same page.
-		document.getElementById( "response" ).innerHTML = "Incorrect!  <a href='index.html'>click here to try again</a>";
+		document.getElementById( "response" ).innerHTML = "Incorrect!  <a href='review-drag-and-drop.html'>click here to try again</a>";
 	}
 }
 
