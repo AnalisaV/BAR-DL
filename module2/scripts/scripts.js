@@ -97,7 +97,7 @@ function reportScores( score )
 	oScorm.set("cmi.core.score.min", 0 );
 	oScorm.set("cmi.core.score.max", 100 );
 	
-	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline”;	
+		
 	
 	if( score >= 70 )
 		{		
