@@ -68,7 +68,7 @@ if( q9[ 1 ].checked )
 	if( score >= .7 )
 	{
 		alert( "Congratulations, you passed!" );
-		parent.document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
+		
 		//location.assign("14-certificate.html");
 	}
 	else

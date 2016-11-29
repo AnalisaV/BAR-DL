@@ -27,7 +27,6 @@ function startCourse()
     			
 			// set the values you want to persist throughout the website here
       		sessionStorage.setItem( "visitTitle", "visited" );
-    		sessionStorage.setItem( "visitNavigation", "unvisited" );
     		sessionStorage.setItem( "visitOnlineResearchTitle", "unvisited" );
     		sessionStorage.setItem( "visitDatabases", "unvisited" );
     		sessionStorage.setItem( "visitDatabaseActivity", "unvisited" );
@@ -98,6 +97,7 @@ function reportScores( score )
 	oScorm.set("cmi.core.score.min", 0 );
 	oScorm.set("cmi.core.score.max", 100 );
 	
+	document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline”;	
 	
 	if( score >= 70 )
 		{		
@@ -131,7 +131,6 @@ function finishCourse()
 function checkAllVisited()
 {
 	var title = sessionStorage.getItem( "visitTitle" );
-	var navigation = sessionStorage.getItem( "visitNavigation" );
 	var onlineresearchtitle = sessionStorage.getItem( "visitOnlineResearchTitle" );
 	var databases = sessionStorage.getItem ( "visitDatabases" );
 	var databaseactivity = sessionStorage.getItem ( "visitDatabaseActivity" );
@@ -144,7 +143,7 @@ function checkAllVisited()
 	var references = sessionStorage.getItem( "visitReferences" );
 
 	
-	if( navigation == "visited" && onlineresearchtitle == "visited" && databases == "visited" && databaseactivity == "visited" && foreignlanguage == "visited" && websites == "visited" && dictionaries == "visited" && dictionariesactivity == "visited" && quotes == "visited" && video == "visited" && references == "visited" )
+	if( onlineresearchtitle == "visited" && databases == "visited" && databaseactivity == "visited" && foreignlanguage == "visited" && websites == "visited" && dictionaries == "visited" && dictionariesactivity == "visited" && quotes == "visited" && video == "visited" && references == "visited" )
 		{
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
 		}
@@ -154,12 +153,6 @@ function checkAllVisited()
 function visitTitle()
 {
 sessionStorage.setItem( "visitTitle", "visited" );	
-checkAllVisited();
-}
-
-function visitNavigation()
-{
-sessionStorage.setItem( "visitNavigation", "visited" );	
 checkAllVisited();
 }
 
