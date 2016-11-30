@@ -9,7 +9,7 @@
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
 	<body>
-	<form action="javascript:processForm()" id="quiz1" name="quiz1">
+	<form onSubmit="javascript:processForm();return false;" name="quiz1" id="quiz1">	
 	<div id="running-header">
 
 		<header>
@@ -32,9 +32,8 @@
 		<nav>
 				 <h2> Navigation</h2>
 	
-			 		<ul>
+			 	<ul>
 					<li><a href="1-title.html">Library 101</a></li>
-					<li><a href="2-navigation.html">Navigation</a></li>
 					<li><a href="3-use-of-library.html">Use of Library</a></li>
 					<li><a href="4-get-card.html">Get a card</a></li>
 					<li><a href="6-etiquette.html">Library Etiquette</a></li>

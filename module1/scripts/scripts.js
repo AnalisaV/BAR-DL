@@ -27,7 +27,6 @@ function startCourse()
     			
 			// set the values you want to persist throughout the website here
       		sessionStorage.setItem( "visitTitle", "visited" );
-    		sessionStorage.setItem( "visitNavigation", "unvisited" );
     		sessionStorage.setItem( "visitUseOfLibrary", "unvisited" );
     		sessionStorage.setItem( "visitGetCard", "unvisited" );
     		sessionStorage.setItem( "visitGuidelines", "unvisited" );
@@ -84,8 +83,11 @@ function reportScores( score )
 	oScorm.set("cmi.core.score.min", 0 );
 	oScorm.set("cmi.core.score.max", 100 );
 	
+	
 	if( score >=70 )
-		{
+		{		
+document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline”;
+
 		oScorm.set( "cmi.core.lesson_status", "passed" );
 		}
 	else
@@ -99,11 +101,16 @@ function reportScores( score )
 }
 
 // This function is called when the window is closed.  It saves and quits the course.
+
 function finishCourse()
 {
+	sessionStorage.clear();
 	oScorm.save();
 	oScorm.quit();
 }
+
+
+
 
 //This function adds the student's name to the certificate page.
 function visitCertificate()
@@ -116,7 +123,6 @@ contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
 function checkAllVisited()
 {
 	var title = sessionStorage.getItem( "visitTitle" );
-	var navigation = sessionStorage.getItem( "visitNavigation" );
 	var useoflibrary = sessionStorage.getItem( "visitUseOfLibrary" );
 	var getcard = sessionStorage.getItem ( "visitGetCard" );
 	var guidelines = sessionStorage.getItem ( "visitGuidelines" );
@@ -127,7 +133,7 @@ function checkAllVisited()
 	var references = sessionStorage.getItem( "visitReferences" );
 
 	
-	if( title == "visited" && navigation == "visited" && useoflibrary == "visited" && getcard == "visited" && guidelines == "visited" && etiquette == "visited" && materials == "visited" && activity == "visited" && video == "visited" && references == "visited" )
+	if( title == "visited" && useoflibrary == "visited" && getcard == "visited" && guidelines == "visited" && etiquette == "visited" && materials == "visited" && activity == "visited" && video == "visited" && references == "visited" )
 		{
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
 		}
@@ -137,12 +143,6 @@ function checkAllVisited()
 function visitTitle()
 {
 sessionStorage.setItem( "visitTitle", "visited" );	
-checkAllVisited();
-}
-
-function visitNavigation()
-{
-sessionStorage.setItem( "visitNavigation", "visited" );	
 checkAllVisited();
 }
 

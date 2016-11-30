@@ -66,7 +66,6 @@ function processForm()
 	{ 
 		
 		alert ("Your score is " + score + "%. Congratulations! You passed this quiz." );
-		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
 
 	}
 	
