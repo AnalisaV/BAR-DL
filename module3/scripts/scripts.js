@@ -33,8 +33,7 @@ function startCourse()
     		sessionStorage.setItem( "visitOverdriveVideo", "unvisited" );
     		sessionStorage.setItem( "visitOneClick", "unvisited" );
     		sessionStorage.setItem( "visitOneClickDigital", "unvisited" );
-    		sessionStorage.setItem( "visitVideo", "unvisited" );
-    		sessionStorage.setItem( "visitFreegal" );
+    		sessionStorage.setItem( "visitFreegal", "unvisited" );
     		sessionStorage.setItem( "visitFreegalVideo", "unvisited" );
     		sessionStorage.setItem( "visitAppActivity", "unvisited" );
     		sessionStorage.setItem( "visitTutorApp", "unvisited" );
@@ -130,7 +129,6 @@ function checkAllVisited()
 	var overdrivevideo = sessionStorage.getItem( "visitOverdriveVideo" );
 	var oneclick = sessionStorage.getItem( "visitOneClick" );
 	var oneclickdigital = sessionStorage.getItem( "visitOneClickDigital" );
-	var video = sessionStorage.getItem( "visitVideo" );
 	var freegal = sessionStorage.getItem( "visitFreegal" );
 	var freegalvideo = sessionStorage.getItem( "visitFreegalVideo" );
 	var appactivity = sessionStorage.getItem( "visitAppActivity" );
@@ -139,7 +137,7 @@ function checkAllVisited()
 	var review = sessionStorage.getItem( "visitReview" );
 	var references = sessionStorage.getItem( "visitReferences" );
 
-	if( objective == "visited" && mysapl == "visited" && mysaplvideo == "visited" && overdrive == "visited" && overdrivevideo == "visited" && oneclick == "visited" && oneclickdigital == "visited" && video == "visited" && freegal == "visited" && freegalvideo == "visited" && appactivity == "visited" && tutorapp == "visited" && tutorvideo == "visited" && review == "visited" && references == "visited" )
+	if( objective == "visited" && mysapl == "visited" && mysaplvideo == "visited" && overdrive == "visited" && overdrivevideo == "visited" && oneclick == "visited" && oneclickdigital == "visited" && freegal == "visited" && freegalvideo == "visited" && appactivity == "visited" && tutorapp == "visited" && tutorvideo == "visited" && review == "visited" && references == "visited" )
 		{
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
 		}
@@ -188,11 +186,6 @@ sessionStorage.setItem( "visitOneClickDigital", "unvisited" );
 checkAllVisited();
 }
 
-function visitVideo()
-{
-sessionStorage.setItem( "visitVideo", "unvisited" );
-checkAllVisited();
-}
 
 function visitFreegal()
 {
