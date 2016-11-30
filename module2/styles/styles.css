@@ -29,11 +29,9 @@ text-align:center;
 
 #name
 {
-	z-index: 100;
-	position: absolute; 
-	color: black; 
-	left: 215px; 
-	top: 215px; 
+	position: absolute;  
+	left: 115px; 
+	top: 15px; 
 }
 
 
@@ -128,10 +126,6 @@ audio
 {
 	width: 230px;
 }
-
-
-
-
 
 
 #image
