@@ -86,7 +86,7 @@ function reportScores( score )
 	oScorm.set("cmi.core.score.raw", score );
 	oScorm.set("cmi.core.score.min", 0 );
 	oScorm.set("cmi.core.score.max", 100 );
-}
+
 
 if( score >= 70 )
 {		
