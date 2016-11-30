@@ -128,6 +128,19 @@ audio
 display: none;
 }
 
+#certificate-link
+{
+	display: none;
+}
+
+#name
+{
+	font-size: 20px;
+    position: absolute;
+    left: 400px;
+    top: 390px;
+}
+
 
 /*
 body
