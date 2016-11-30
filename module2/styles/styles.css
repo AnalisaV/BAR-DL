@@ -30,8 +30,9 @@ text-align:center;
 #name
 {
 	position: absolute;  
-	left: 390px; 
-	top: 450px; 
+	left: 400px; 
+	top: 390px; 
+	font-size: 20px;
 }
 
 
