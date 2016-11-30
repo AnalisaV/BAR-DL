@@ -249,3 +249,10 @@ audio
 	width: 230px;
 }*/
 
+#name
+ {
+ position: absolute;
+    left: 280px;
+    top: 300px;
+}
+
