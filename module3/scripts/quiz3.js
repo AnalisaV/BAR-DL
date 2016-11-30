@@ -62,18 +62,17 @@ if( q10[ 2 ].checked )
 	numberOfCorrectResponses = numberOfCorrectResponses + 1;
 	}
 
+var score = (numberOfCorrectResponses / 10) * 100;
 
-var score = numberOfCorrectResponses / 10;
-
-if( score > .6 )
+if( score >= 70 )
 {
-alert( "Congratulations, you passed!" );
- }
-else
-	{
-	alert( "Sorry, you did not pass." );
-	}
-
-
+	alert( "Congratulations, you passed!" );
+	
+	//location.assign("14-certificate.html");
 }
+else
+{
+	alert ( "Your score is " + score + "%. You did not pass. Please try again." );
+}
+parent.reportScores( score );
 
