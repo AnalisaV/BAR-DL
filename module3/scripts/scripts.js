@@ -152,7 +152,7 @@ checkAllVisited();
 
 function visitMySapl()
 {
-sessionStorage.setItem( "visitMySapl", "visited" );	
+sessionStorage.setItem( "visitMySapl", "unvisitedvisited" );	
 checkAllVisited();
 }
 
@@ -189,7 +189,7 @@ checkAllVisited();
 
 function visitFreegal()
 {
-sessionStorage.setItem( "visitFreegal" );
+sessionStorage.setItem( "visitFreegal", "unvisited" );
 checkAllVisited();
 }
 
