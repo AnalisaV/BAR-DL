@@ -86,7 +86,7 @@ function reportScores( score )
 	
 	if( score >=70 )
 		{		
-document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline”;
+document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
 
 		oScorm.set( "cmi.core.lesson_status", "passed" );
 		}
