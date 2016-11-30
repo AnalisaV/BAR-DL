@@ -26,9 +26,24 @@ function startCourse()
     		sessionStorage.setItem( "course_started", "1" );
     			
 			// set the values you want to persist throughout the website here
+    		sessionStorage.setItem( "visitObjective", "visited" );
+    		sessionStorage.setItem( "visitMySapl", "unvisited" );
+    		sessionStorage.setItem( "visitMySaplVideo", "unvisited" );
+    		sessionStorage.setItem( "visitOverdrive", "unvisited" );
+    		sessionStorage.setItem( "visitOverdriveVideo", "unvisited" );
+    		sessionStorage.setItem( "visitOneClick", "unvisited" );
+    		sessionStorage.setItem( "visitOneClickDigital", "unvisited" );
+    		sessionStorage.setItem( "visitVideo", "unvisited" );
+    		sessionStorage.setItem( "visitFreegal" );
+    		sessionStorage.setItem( "visitFreegalVideo", "unvisited" );
+    		sessionStorage.setItem( "visitAppActivity", "unvisited" );
+    		sessionStorage.setItem( "visitTutorApp", "unvisited" );
+    		sessionStorage.setItem( "visitTutorVideo", "unvisited" );
+    		sessionStorage.setItem( "visitReview", "unvisited" );
+    		sessionStorage.setItem( "visitReferences", "unvisited" );
         }
-	}
 	
+	}
 	// initializeSCORM after the OLM environment has been set up
 	initializeSCORM();
 }
@@ -106,13 +121,117 @@ function visitCertificate()
 contentWindow.document.getElementById( "user-name" ).innerHTML = learner_name;
 }
 
+function checkAllVisited()
+{
+	var objective = sessionStorage.getItem( "visitObjective" );
+	var mysapl = sessionStorage.getItem( "visitMySapl" );
+	var mysaplvideo = sessionStorage.getItem( "visitMySaplVideo" );
+	var overdrive = sessionStorage.getItem( "visitOverdrive" );
+	var overdrivevideo = sessionStorage.getItem( "visitOverdriveVideo" );
+	var oneclick = sessionStorage.getItem( "visitOneClick" );
+	var oneclickdigital = sessionStorage.getItem( "visitOneClickDigital" );
+	var video = sessionStorage.getItem( "visitVideo" );
+	var freegal = sessionStorage.getItem( "visitFreegal" );
+	var freegalvideo = sessionStorage.getItem( "visitFreegalVideo" );
+	var appactivity = sessionStorage.getItem( "visitAppActivity" );
+	var tutorapp = sessionStorage.getItem( "visitTutorApp" );
+	var tutorvideo = sessionStorage.getItem( "visitTutorVideo" );
+	var review = sessionStorage.getItem( "visitReview" );
+	var references = sessionStorage.getItem( "visitReferences" );
 
+	if( objective == "visited" && mysapl == "visited" && mysaplvideo == "visited" && overdrive == "visited" && overdrivevideo == "visited" && oneclick == "visited" && oneclickdigital == "visited" && video == "visited" && freegal == "visited" && freegalvideo == "visited" && appactivity == "visited" && tutorapp == "visited" && tutorvideo == "visited" && review == "visited" && references == "visited" )
+		{
+		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
+		}
 
+}
 
+function visitObjective()
+{
+sessionStorage.setItem( "visitObjective", "visited" );	
+checkAllVisited();
+}
 
+function visitMySapl()
+{
+sessionStorage.setItem( "visitMySapl", "visited" );	
+checkAllVisited();
+}
 
+function visitMySaplVideo()
+{
+sessionStorage.setItem( "visitMySaplVideo", "unvisited" );
+checkAllVisited();
+}
 
+function visitOverdrive()
+{
+sessionStorage.setItem( "visitOverdrive", "unvisited" );
+checkAllVisited();
+}
 
+function visitOverdriveVideo()
+{
+sessionStorage.setItem( "visitOverdriveVideo", "unvisited" );
+checkAllVisited();
+}
 
+function visitOneClick()
+{
+sessionStorage.setItem( "visitOneClick", "unvisited" );
+checkAllVisited();
+}
+
+function visitOneClickDigital()
+{
+sessionStorage.setItem( "visitOneClickDigital", "unvisited" );
+checkAllVisited();
+}
+
+function visitVideo()
+{
+sessionStorage.setItem( "visitVideo", "unvisited" );
+checkAllVisited();
+}
+
+function visitFreegal()
+{
+sessionStorage.setItem( "visitFreegal" );
+checkAllVisited();
+}
+
+function visitFreegalVideo()
+{
+sessionStorage.setItem( "visitFreegalVideo", "unvisited" );checkAllVisited();
+}
+
+function visitAppActivity()
+{
+sessionStorage.setItem( "visitAppActivity", "unvisited" );
+checkAllVisited();
+}
+
+function visitTutorApp()
+{
+sessionStorage.setItem( "visitTutorApp", "unvisited" );
+checkAllVisited();
+}
+
+function visitTutorVideo()
+{
+sessionStorage.setItem( "visitTutorVideo", "unvisited" );
+checkAllVisited();
+}
+
+function visitReview()
+{
+sessionStorage.setItem( "visitReview", "unvisited" );
+checkAllVisited();
+}
+
+function visitReferences()
+{
+sessionStorage.setItem( "visitReferences", "unvisited" );
+}
 
 
