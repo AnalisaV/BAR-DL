@@ -65,7 +65,7 @@ if( q9[ 1 ].checked )
 
 	var score = (numberOfCorrectResponses / 10) * 100;
 
-	if( score >= .7 )
+	if( score >= 70 )
 	{
 		alert( "Congratulations, you passed!" );
 		

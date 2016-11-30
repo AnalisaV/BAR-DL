@@ -101,7 +101,6 @@ function reportScores( score )
 	
 	if( score >= 70 )
 		{		
-		
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
 		
 		oScorm.set( "cmi.core.lesson_status", "passed" );
@@ -143,7 +142,7 @@ function checkAllVisited()
 	var references = sessionStorage.getItem( "visitReferences" );
 
 	
-	if( title == "visted" && onlineresearchtitle == "visited" && databases == "visited" && databaseactivity == "visited" && foreignlanguage == "visited" && websites == "visited" && dictionaries == "visited" && dictionariesactivity == "visited" && quotes == "visited" && video == "visited" && references == "visited" )
+	if( title == "visited" && onlineresearchtitle == "visited" && databases == "visited" && databaseactivity == "visited" && foreignlanguage == "visited" && websites == "visited" && dictionaries == "visited" && dictionariesactivity == "visited" && quotes == "visited" && video == "visited" && references == "visited" )
 		{
 		document.getElementById( "content-frame" ).contentWindow.document.getElementById( "quiz-link" ).style.display = "inline";
 		}
