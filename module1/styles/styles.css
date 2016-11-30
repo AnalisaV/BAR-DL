@@ -250,9 +250,11 @@ audio
 }*/
 
 #name
- {
- position: absolute;
-    left: 280px;
-    top: 300px;
+{
+	font-size: 20px;
+    position: absolute;
+    left: 400px;
+    top: 390px;
 }
+
 
