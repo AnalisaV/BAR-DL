@@ -88,7 +88,7 @@ function reportScores( score )
 	oScorm.set("cmi.core.score.max", 100 );
 }
 
-if( score >=70 )
+if( score >= 70 )
 {		
 document.getElementById( "content-frame" ).contentWindow.document.getElementById( "certificate-link" ).style.display = "inline";
 
@@ -102,6 +102,7 @@ oScorm.set( "cmi.core.lesson_status", "failed" );
 alert( "Reported " + score + " as your score." );
 
 	oScorm.save();
+
 }
 
 // This function is called when the window is closed.  It saves and quits the course.
