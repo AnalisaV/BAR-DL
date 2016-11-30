@@ -129,6 +129,13 @@ audio
 	width: 230px;
 }
 
+#name
+{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
 
 
 
