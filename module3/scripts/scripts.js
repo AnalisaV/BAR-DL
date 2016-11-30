@@ -101,7 +101,7 @@ oScorm.set( "cmi.core.lesson_status", "failed" );
 
 alert( "Reported " + score + " as your score." );
 
-oScorm.save();
+	oScorm.save();
 }
 
 // This function is called when the window is closed.  It saves and quits the course.
@@ -152,80 +152,80 @@ checkAllVisited();
 
 function visitMySapl()
 {
-sessionStorage.setItem( "visitMySapl", "unvisited" );	
+sessionStorage.setItem( "visitMySapl", "visited" );	
 checkAllVisited();
 }
 
 function visitMySaplVideo()
 {
-sessionStorage.setItem( "visitMySaplVideo", "unvisited" );
+sessionStorage.setItem( "visitMySaplVideo", "visited" );
 checkAllVisited();
 }
 
 function visitOverdrive()
 {
-sessionStorage.setItem( "visitOverdrive", "unvisited" );
+sessionStorage.setItem( "visitOverdrive", "visited" );
 checkAllVisited();
 }
 
 function visitOverdriveVideo()
 {
-sessionStorage.setItem( "visitOverdriveVideo", "unvisited" );
+sessionStorage.setItem( "visitOverdriveVideo", "visited" );
 checkAllVisited();
 }
 
 function visitOneClick()
 {
-sessionStorage.setItem( "visitOneClick", "unvisited" );
+sessionStorage.setItem( "visitOneClick", "visited" );
 checkAllVisited();
 }
 
 function visitOneClickDigital()
 {
-sessionStorage.setItem( "visitOneClickDigital", "unvisited" );
+sessionStorage.setItem( "visitOneClickDigital", "visited" );
 checkAllVisited();
 }
 
 
 function visitFreegal()
 {
-sessionStorage.setItem( "visitFreegal", "unvisited" );
+sessionStorage.setItem( "visitFreegal", "visited" );
 checkAllVisited();
 }
 
 function visitFreegalVideo()
 {
-sessionStorage.setItem( "visitFreegalVideo", "unvisited" );
+sessionStorage.setItem( "visitFreegalVideo", "visited" );
 checkAllVisited();
 }
 
 function visitAppActivity()
 {
-sessionStorage.setItem( "visitAppActivity", "unvisited" );
+sessionStorage.setItem( "visitAppActivity", "visited" );
 checkAllVisited();
 }
 
 function visitTutorApp()
 {
-sessionStorage.setItem( "visitTutorApp", "unvisited" );
+sessionStorage.setItem( "visitTutorApp", "visited" );
 checkAllVisited();
 }
 
 function visitTutorVideo()
 {
-sessionStorage.setItem( "visitTutorVideo", "unvisited" );
+sessionStorage.setItem( "visitTutorVideo", "visited" );
 checkAllVisited();
 }
 
 function visitReview()
 {
-sessionStorage.setItem( "visitReview", "unvisited" );
+sessionStorage.setItem( "visitReview", "visited" );
 checkAllVisited();
 }
 
 function visitReferences()
 {
-sessionStorage.setItem( "visitReferences", "unvisited" );
+sessionStorage.setItem( "visitReferences", "visited" );
 }
 
 
