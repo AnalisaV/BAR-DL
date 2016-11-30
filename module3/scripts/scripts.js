@@ -227,6 +227,7 @@ checkAllVisited();
 function visitReferences()
 {
 sessionStorage.setItem( "visitReferences", "visited" );
+checkAllVisited();
 }
 
 
