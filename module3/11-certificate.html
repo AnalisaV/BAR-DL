@@ -2,60 +2,37 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
-		<title>Page title here</title>
+		<title>Certificate of Completion</title>
 		<link href="styles/styles.css" rel="stylesheet" type="text/css"/>
 		<script src="scripts/quiz3.js" languae= "javascript"></script>
 		
 		<!--- link your other script files here that are specific to this HTML page here --->
 	</head>	
 	<body onload="parent.visitCertificate()">
-	<header>
+	
+	<div id="running-header">
+	
+		<header>
 			<img src="images/public-library.jpg" alt="Header" title="Header"/>
 		</header>
-		<div id="main-content">
-		<section>
-			<div id="main-info">
-				<article>
-					<header>
-						<h1><!--- put your content title here ---></h1>
-					</header>
-					
-					<img src="images/certificate.jpg.png" alt="Certificate" title="Certificate"/>
-				
-				</article>
-			</div>
-			<div id="aside-info">
-				<aside>
-					<header>
-						<p id="aside-title-audio">Audio</p>
-					</header>
-					<!--- put your audio here --->
-					<br/>
-					
-					<header>
-						<p id="aside-title-audio">Captions</p>
-					</header>
-				<div id="transcript">
-					<!--- include your transcript here --->
-				</div>
-				</aside>
-			</div>
-			
-		<div id="name">
-				<span id="user-name"></span> 
-				</div>
-				<center>
-					<img src="images/certificate.jpg" alt="Certificate" title="Certificate"/>
-				</center>
-		
-		<div id="sub-navigation">
-			<nav>
-				<!--- include your sub-navigation links, if any, here --->
-			</nav>
 		</div>
-		<div id="navigation">
-			<nav>
-    			<li><a href="1-title.html">Objective</a></li>
+		
+	<header>
+	
+		<h1> Module 3: Other Useful Resources</h1>
+		<h2>Certificate</h2>
+		
+	</header>
+	
+<hr>
+
+
+	<section>
+	
+		<nav>
+		
+			<ul>
+				<li><a href="1-title.html">Objective</a></li>
 				<li><a href="7-apps.html">mySAPL</a></li>
 				<li><a href="mysapl-video.html">mySAPL Video</a></li>
 				<li><a href="apps-2.html">Overdrive</a></li>
@@ -71,7 +48,49 @@
 				<li><a href="12-references.html">References</a></li>
 				<li><a href="module3-assessment.html" id="quiz-link">Assessment</a></li>
 				<li><a href="11-certificate.html" id="certificate-link">Certificate</a></li>
-			</nav>
+		
+			</ul>
+		
+		</nav>
+	
+		
+		<article>
+		
+				<div id="aside-info">
+					<aside>
+						<header>
+							<p id="aside-title-audio">Audio</p>
+						</header>
+						
+							<audio controls="controls" autoplay="autoplay">
+							<source scr="audio/certificate.mp3" type="audio/mpeg"/>
+							 </audio>
+						<br/>
+						
+							
+						<header>
+							<p id="aside-title-audio">Captions</p>
+						</header>
+							<div id="transcript">
+								<p>Congratulations! You may print your certificate for your records.</p>
+							</div>
+					</aside>
+				
+				</div>
+		
+		<div id="name">
+			
+			<span id="user-name"></span>
+			
+		</div>
+		
+				<center>
+					<img src="images/certificate.jpg" alt="Certificate" title="Certificate"/>
+				</center>
+		
+		</article>
+		
 		</div>
 	</body>
 </html>
+	
